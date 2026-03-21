@@ -131,7 +131,7 @@ loadQuestion(0);
 let currentIndex = 0;
 btn.forEach((button) => {
     button.addEventListener("click", function() {
-        checkAnswer(this.innerText);
+        checkAnswer(this.querySelector(".answer-text").innerText);
     });
 });
 
