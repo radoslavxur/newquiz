@@ -110,7 +110,7 @@ const questions = [
 
 
 const question = document.querySelector("#question");
-const btn = document.querySelectorAll(".answer-text");
+const btn = document.querySelectorAll(".answer");
 const result = document.querySelector("#otgovor");
 let correct = 0;
 let wrong = 0;
@@ -120,10 +120,10 @@ const wrongSound = document.getElementById("wrong");
 function loadQuestion(index) {
     let current = questions[index];
     question.innerHTML = current.question;
-    btn[0].innerHTML = current.answers[0];
-    btn[1].innerHTML = current.answers[1];
-    btn[2].innerHTML = current.answers[2];
-   btn[3].innerHTML = current.answers[3];
+    btn[0].querySelector(".answer-text").innerHTML = current.answers[0];
+    btn[1].querySelector(".answer-text").innerHTML = current.answers[1];
+    btn[2].querySelector(".answer-text").innerHTML = current.answers[2];
+    btn[3].querySelector(".answer-text").innerHTML = current.answers[3];
 }
 
 loadQuestion(0);
