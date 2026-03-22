@@ -5,23 +5,24 @@
 }
 
 body {
+    margin: 0;
     min-height: 100vh;
-    /* Правим градиента по-широк, за да има накъде да се движи */
-    background: linear-gradient(105deg, #4750b3, #0d0d2b, #4750b3);
-    background-size: 200% 200%;
-    
-    /* Дефинираме анимацията: име, продължителност, начин на изпълнение, безкрайност */
-    animation: gradientAnimation 8s ease infinite;
-    
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Градиент с повече контраст и междинен светъл цвят */
+    background: linear-gradient(105deg, #0d0d2b, #4750b3, #6a75f0, #4750b3, #0d0d2b);
+    
+    /* Увеличаваме размера драстично, за да се вижда движението */
+    background-size: 400% 400%;
+    
+    /* Анимация: по-бърза за осезаем ефект */
+    animation: moveGradient 10s ease infinite;
 }
 
-/* Логиката на движението */
-@keyframes gradientAnimation {
+@keyframes moveGradient {
     0% {
         background-position: 0% 50%;
     }
