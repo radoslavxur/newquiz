@@ -149,7 +149,7 @@ const wrongSound = document.getElementById("wrong");
 let correctCount = 0;
 let wrongCount = 0;
 let currentIndex = 0;
-let fiftyUses = 5;
+let fiftyUses = 6;
 let isWaiting = false;
 
 // 4. ФУНКЦИЯ ЗА ЗАРЕЖДАНЕ НА ВЪПРОС
