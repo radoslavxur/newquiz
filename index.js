@@ -184,7 +184,6 @@ function loadQuestion(index) {
             textSpan.innerText = current.answers[i];
         }
     });
-  loadQuestion(0);
     // Обновяваме нивото
     updateLevel(index);
 }
